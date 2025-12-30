@@ -1,0 +1,26 @@
+# 1. 忽略 Python 编译文件和虚拟环境 (垃圾文件)
+__pycache__/
+*.pyc
+.venv/
+venv/
+.idea/
+.vscode/
+
+# 2. 忽略机密信息 (绝对不能传！)
+.env
+api_key.txt
+
+# 3. 忽略数据集 (因为都在 Hugging Face 上了)
+*.xlsx
+*.csv
+*.json
+*.parquet
+data/
+
+# 4. 忽略训练出来的模型文件 (因为太大了，且已传 HF)
+*.bin
+*.safetensors
+output/
+saved_models/
+checkpoints/
+wandb/
